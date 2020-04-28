@@ -1,5 +1,6 @@
 import React from 'react';
 import { FiLogIn } from 'react-icons/fi';
+import { Link } from 'react-router-dom'
 
 import './styles.css';
 
@@ -19,10 +20,10 @@ export default function Logon() {
 
           <button className="button" type="submit">Entrar</button>
 
-          <a href="/register">
+          <Link className="back-link" to="/register">
             <FiLogIn />
             Não tenho cadastro
-          </a>
+          </Link>
         </form>
       </section>
 
